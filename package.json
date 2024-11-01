@@ -1,6 +1,7 @@
 {
   "name": "amigurumi-mir",
   "version": "1.0.0",
+  "type": "module",
   "description": "online store",
   "main": "index.js",
   "scripts": {
@@ -14,7 +15,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "mongodb": "^6.10.0",
-    "mongoose": "^8.8.0"
+    "mongoose": "^8.8.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
