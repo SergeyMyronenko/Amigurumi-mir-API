@@ -21,6 +21,7 @@ const productSchema = new Schema(
     },
     unit: {
       type: String,
+      default: "шт",
     },
     availability: {
       type: String,
@@ -37,7 +38,7 @@ const productSchema = new Schema(
     query: {
       type: String,
     },
-    category: { type: String, required: true, default: "Основна" },
+    category: { type: String, default: "Основна" },
     rating: {
       type: Number,
       default: 0,

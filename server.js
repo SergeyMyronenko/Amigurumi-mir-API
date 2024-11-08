@@ -8,6 +8,8 @@ const startServer = async () => {
   try {
     await connect(DB_HOST);
     app.listen(PORT, () => {
+      console.log(`Startin on port: ${PORT}`);
+
       console.log("DATABASE succsesfully start!");
     });
   } catch (error) {
