@@ -2,10 +2,19 @@
   "name": "amigurumi-mir",
   "version": "1.0.0",
   "type": "module",
+  "nodemonConfig": {
+    "ext": "js",
+    "ignore": [
+      "*.test.ts",
+      "db/*"
+    ],
+    "delay": "2"
+  },
   "description": "online store",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js",
     "dev": "nodemon ./server.js"
   },
   "author": "Sergiy Myronenko",
