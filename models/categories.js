@@ -9,6 +9,10 @@ const categorySchema = new Schema(
     description: {
       type: String,
     },
+    image: {
+      type: String,
+      default: "../image/emptyImg.png",
+    },
     subcategory: [
       {
         name: {
