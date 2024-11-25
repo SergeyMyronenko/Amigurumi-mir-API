@@ -2,7 +2,7 @@ import { Category } from "../models/categories.js";
 import HttpError from "../utils/HttpError.js";
 
 export const addCategory = async (req, res, next) => {
-  const { name, description, subcategory } = req.body;
+  const { name, description } = req.body;
 
   try {
     const data = { name, description };
@@ -18,6 +18,7 @@ export const addCategory = async (req, res, next) => {
     }
 
     const newCategory = await Category.create(data);
+
     res.status(201).json(newCategory);
   } catch (error) {
     next(error);
